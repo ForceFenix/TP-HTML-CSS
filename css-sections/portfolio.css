@@ -1,0 +1,106 @@
+/*----------------------SECTION MY PORTFOLIO----------------------*/
+/*----------------------SECTION MY PORTFOLIO----------------------*/
+/*----------------------SECTION MY PORTFOLIO----------------------*/
+/*----------------------SECTION MY PORTFOLIO----------------------*/
+.myporfolio-container {
+    width: var(--section-width-lg);
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+.deck--card-w-img{
+    font-family: var(--font-primary);
+    font-size: medium;
+    width: var(--card-width);
+    height: var(--card-image-height);
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.deck--card-w-img h3{
+    font-size: 17px;
+    font-weight: 600;
+}
+.card-image-subtitle {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.card-img{
+    height: 150px;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+.card-img img{
+    height: 200px;
+    width: 300px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .myporfolio-container {
+        width: var(--section-width-medium);
+        height: auto;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .deck--card-w-img{
+        flex-grow: 1;
+        max-width: 45%;
+    
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .myporfolio-container {
+        width: var(--section-width-small);
+    }
+    .deck--card-w-img{
+        margin-bottom: 40px;
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .card-image-text{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+        height: 200px;
+        width: 40%;
+    }
+    .deck--card-w-img h3{
+        font-size: 20px;
+    }
+    .card-image-subtitle {
+        font-size: 15px;
+        justify-content: start;
+        gap: 20px;
+    }
+    .card-img{
+        border-radius: 15px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+    .card-img img{
+        height: 200px;
+        object-fit: fill;
+    }
+}

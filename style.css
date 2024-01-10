@@ -1,0 +1,176 @@
+/* fuentes: monserrat, poppins */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+@import 'css-sections/nav.css';
+@import 'css-sections/main.css';
+@import 'css-sections/what-i-do.css';
+@import 'css-sections/portfolio.css';
+@import 'css-sections/resume.css';
+@import 'css-sections/blog.css';
+@import 'css-sections/contact.css';
+@import 'css-sections/footer.css';
+
+
+:root{
+    --bg-color: #ECF0F3;
+    --bg-hover: linear-gradient(133deg, rgba(249,76,129,1) 0%, rgba(255,180,203,1) 98%, rgba(236,240,243,1) 100%);
+    --txt-color: #3A3B3F;
+    --txt2-color: #F94C81;
+    --txt3-color: #9a9fa3;
+    --txt4-color: #FF014F;
+    --line-color: #d9dde0;
+
+
+    --section-width-lg: 950px;
+    --section-width-med: 768px;
+    --section-width-small: 600px;
+
+    --card-width: 275px;
+    --card-height: 250px;
+    --card-image-height: 300px;
+
+    --deck-width-lg: 550px;
+    --deck-width-medium: 700px;
+    --deck-width-small: 80%;
+
+    --deck-height-lg: 550px;
+    --deck-height-medium: 825px;
+    --deck-height-small: 1600px;
+
+    --font-primary:'Poppins', sans-serif;
+    --font-secondary:'Montserrat', sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--txt-color);
+}
+
+
+/* ------------------------CLASES ESPECIALES------------------------ */
+
+.relieve-box__shadow{
+    border-radius: 10px;
+    outline: 1px solid var(--bg-color);
+    box-shadow: 
+        5px 5px 10px 5px rgb(224, 229, 233),
+        -5px -5px 10px -3px #ffffff; 
+        
+}
+.relieve-box{
+    border-radius: 10px;
+    outline: 1px solid var(--bg-color);
+    box-shadow: 
+        5px 5px 10px 5px rgb(224, 229, 233),
+        -5px -5px 10px -3px #ffffff; 
+        
+    background: linear-gradient(138deg, 
+        rgba(222,229,235,1) 0%, 
+        rgba(236,239,242,1) 48%, 
+        rgba(255,255,255,1) 100%);
+}
+.color-rosa {
+    color: var(--txt2-color);
+}
+.color-gris {
+    color: var(--txt3-color);
+}
+.a-cleaner{
+    text-decoration: none;
+}
+.icon{
+    height: 18px;
+    width: 18px;
+}
+.icon2{
+    height: 20px;
+    width: 20px;
+}
+.spacing{
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.separador{
+    height: 2px;
+    width: 60%;
+    margin: 75px auto;
+    background-color: #eaeaf0;
+}
+.fs-45px{
+    font-size: 45px;
+}
+.fs-2em{
+    font-size: 2em;;
+}
+.fs-1_5em{
+    font-size: 1.5em;
+}
+.fs-15px{
+    font-size: 15px;
+}
+.fs-small {
+    font-size: small;
+}
+.fs-medium{
+    font-size: medium;
+}
+.fs-large{
+    font-size: large;
+}
+.fs-larger{
+    font-size: larger;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.title1{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: var(--font-secondary);
+}
+.title2{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--font-secondary);
+    margin-bottom: 50px;
+}
+
+/* ------------------------ESCTRUCTURA------------------------ */
+
+
+
+body{    
+    background-color: var(--bg-color);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .title1{
+        width: var(--section-width-med);
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width: 767px) {
+
+}
