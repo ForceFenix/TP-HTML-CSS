@@ -23,17 +23,9 @@
     .footer-container {
         width: var(--section-width-medium);
     }
-    .footer__copyright {
-    }
-    .footer__text {
-    }
 }
 @media screen and (max-width: 767px) {
     .footer-container {
         width: var(--section-width-small);
-    }
-    .footer__copyright {
-    }
-    .footer__text {
     }
 }
