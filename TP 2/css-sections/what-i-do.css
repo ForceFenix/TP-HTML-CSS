@@ -1,0 +1,192 @@
+/*----------------------SECTION WHAT I DO----------------------*/
+/*----------------------SECTION WHAT I DO----------------------*/
+/*----------------------SECTION WHAT I DO----------------------*/
+/*----------------------SECTION WHAT I DO----------------------*/
+
+:root {
+    --bg-color: #ecf0f3;
+    --bg-hover: linear-gradient(133deg,
+            rgba(249, 76, 129, 1) 0%,
+            rgba(255, 180, 203, 1) 98%,
+            rgba(236, 240, 243, 1) 100%);
+    --txt-color: #3a3b3f;
+    --txt2-color: #f94c81;
+    --txt3-color: #9a9fa3;
+    --txt4-color: #ff014f;
+    --line-color: #d9dde0;
+
+    --section-width-lg: 950px;
+    --section-width-med: 768px;
+    --section-width-small: 600px;
+
+    --card-width: 275px;
+    --card-height: 250px;
+    --card-image-height: 300px;
+
+    --deck-width-lg: 550px;
+    --deck-width-medium: 700px;
+    --deck-width-small: 80%;
+
+    --deck-height-lg: 550px;
+    --deck-height-medium: 825px;
+    --deck-height-small: 1600px;
+
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+
+    --js-green-check: #35ce8d;
+}
+
+.section-container {
+    width: var(--section-width-lg);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.deck2 {
+    width: var(--section-width-lg);
+    position: relative;
+    overflow: hidden;
+}
+.slider-deck {
+    width: 200%;
+    display: flex;
+    gap: 20px;
+    padding: 10px 10px;
+    margin-left: -50%;
+}
+.deck--card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    gap: 10px;
+    font-family: var(--font-secondary);
+}
+.btnPrev,
+.btnNext {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.btnPrev span,
+.btnNext span {
+    font-size: 30px;
+    color: var(--txt2-color);
+}
+.btnNext {
+    right: 0;
+    background: rgb(236, 240, 243);
+    background: linear-gradient(133deg,
+            rgba(236, 240, 243, 0.3981967787114846) 0%,
+            rgba(238, 241, 244, 1) 75%,
+            rgba(239, 242, 245, 1) 100%);
+}
+.btnPrev {
+    left: 0;
+    background: rgb(239, 242, 245);
+    background: linear-gradient(133deg,
+            rgba(239, 242, 245, 1) 0%,
+            rgba(238, 241, 244, 1) 25%,
+            rgba(236, 240, 243, 0.3981967787114846) 100%);
+}
+
+.deck--card h3 {
+    font-size: 17px;
+}
+
+.deck--card span {
+    margin-left: 10px;
+}
+
+.deck--card p {
+    font-weight: 500;
+    font-size: 12px;
+    font-family: var(--font-primary);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .section-container {
+        width: var(--section-width-medium);
+    }
+
+    .deck2 {
+        width: var(--section-width-medium);
+        margin: 0;
+        padding: 0;
+    }
+
+    .deck--card {
+        padding: 40px 40px;
+        width: 45%;
+
+        position: relative;
+    }
+
+    .deck--card h3 {
+        font-size: 20px;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .deck--card span {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        font-size: 40px;
+    }
+
+    .deck--card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .deck--card p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-container {
+        width: var(--section-width-small);
+    }
+
+    .deck2 {
+        width: var(--section-width-small);
+        margin: auto;
+    }
+
+    .deck--card {
+        padding: 40px 30px;
+        min-width: 30%;
+        min-height: 300px;
+        position: relative;
+    }
+
+    .deck--card h3 {
+        width: 70%;
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .deck--card span {
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        font-size: 80px;
+    }
+
+    .deck--card p {
+        font-size: 20px;
+    }
+
+    .deck--card img {
+        width: 50px;
+        height: 50px;
+    }
+}

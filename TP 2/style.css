@@ -40,6 +40,8 @@
     --font-primary:'Poppins', sans-serif;
     --font-secondary:'Montserrat', sans-serif;
 
+    --js-green-check: #35ce8d;
+
 }
 
 *{
@@ -163,7 +165,6 @@
 body{    
     background-color: var(--bg-color);
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .title1{

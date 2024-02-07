@@ -116,6 +116,8 @@
     transition: .4s ease-out;
 }
 
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .contact-container {
         width: var(--section-width-medium);
@@ -151,4 +153,33 @@
         width: 50%;
         height: 100px;
     }
+}
+
+
+/* CLASES PARA JS */
+
+.form_sended{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: var(--bg-color);
+    background-color: var(--js-green-check);
+    border: none;
+    margin: 10px auto;
+    transition: .4s ease;
+    overflow: hidden;
+}
+
+.form_sended img{
+    width: 100%;
+}
+
+.menessageSended{
+    width: 100%;
+    color: var(--js-green-check);
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+
 }
